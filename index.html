@@ -8,180 +8,220 @@
 
 <body style="background-color: #f6efdd">
 
-  <div class="hotdog-div">
-    <img src="src/hotdog.gif" height="100" />
+  <div id="section-1">
+    <div class="hotdog-div">
+      <img src="src/walking_hotdog.gif" height="100" />
+    </div>
+    <div style="text-align: center;">
+      <h1 class="new-font">Pre-Happy Birthday Lena! 🎉</h1>
+    </div>
+    <div style="height: 10px"></div>
+    <div style="text-align: center;">
+      <h5 class="new-font">I have prepared some gifts for you!</h5>
+      <h5 class="new-font">It's not gonna be an offical celebration yet, </h5>
+      <h5 class="new-font">But just to know what you would like so I can get to prepare on time!</h5>
+      <h5 class="new-font">Let's see what you will get 😌</h5>
+      <h5 class="new-font">Click the button below to start!</h5>
+    </div>
+    <div style="height: 30px"></div>
+    <div style="text-align: center;">
+      <h3 class="new-font">👇👇👇</h3>
+    </div>
+    <div style="text-align: center;">
+      <a href="#section-2">
+        <button class="btn new-font select-btn" style="margin-right: 0px" onclick="sectionTwo()">
+          Start!
+        </button>
+      </a>
+    </div>
   </div>
-
-  <div style="text-align: center;">
-    <h3 class="new-font">Would you like to choose it or do a lucky draw? 😏</h3>
-  </div>
-  <div style="height: 30px"></div>
-
-  <div class="select-btn-row">
-    <button class="select-btn btn new-font" onclick="chooseBlock()" id="choose-btn">
-      Choose!
-    </button>
-    <button class="select-btn btn new-font" onclick="luckyDrawBlock()" id="lucky-draw-btn">
-      Lucky Draw!
-    </button>
-  </div>
-
-  <!-- <img src="src/flip_it.png" /> -->
-
-  <div id="choose">
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="src/full_body.png" alt="Avatar" height="100">
-        </div>
-        <div class="flip-card-back">
-          <img src="src/full_body.png" height="100" />
-        </div>
-      </div>
+  <div id="section-2">
+    <div class="hotdog-div" id="waiting_hotdog">
+      <img src="src/waiting_hotdog.gif" height="100" />
     </div>
 
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="src/head_neck.png" alt="Avatar" height="100">
-        </div>
-        <div class="flip-card-back">
-          <img src="src/head_neck.png" height="100" />
-        </div>
-      </div>
+    <div class="hotdog-div" id="running_hotdog">
+      <img src="src/running_hotdog.gif" height="100" />
     </div>
 
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="src/two_days.png" alt="Avatar" height="100">
-        </div>
-        <div class="flip-card-back">
-          <img src="src/two_days.png" height="100" />
-        </div>
-      </div>
+    <div style="text-align: center;">
+      <h3 class="new-font">Would you like to choose it or do a lucky draw? 😏</h3>
+    </div>
+    <div style="height: 30px"></div>
+
+    <div class="select-btn-row">
+      <button class="select-btn btn new-font" onclick="chooseBlock()" id="choose-btn">
+        Choose!
+      </button>
+      <button class="select-btn btn new-font" onclick="luckyDrawBlock()" id="lucky-draw-btn">
+        Lucky Draw!
+      </button>
+      <button class="select-btn btn new-font" onclick="backBlock()" id="back-btn">
+        Back
+      </button>
     </div>
 
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="src/one_night.png" alt="Avatar" height="100">
-        </div>
-        <div class="flip-card-back">
-          <img src="src/one_night.png" height="100" />
-        </div>
-      </div>
+    <div style="text-align: center" id="disclaimer">
+      <h5 class="new-font">*Each chosen gift includes at least one dinner + a night together.*</h5>
     </div>
 
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="src/lego_block.png" alt="Avatar" height="100">
-        </div>
-        <div class="flip-card-back">
-          <img src="src/lego_block.png" height="100" />
+    <!-- <img src="src/flip_it.png" /> -->
+
+    <div id="choose">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="src/full_body.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back">
+            <img src="src/full_body.png" height="100" />
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="src/airplane_ticket.png" alt="Avatar" height="100">
-        </div>
-        <div class="flip-card-back">
-          <img src="src/airplane_ticket.png" height="100" />
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="src/head_neck.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back">
+            <img src="src/head_neck.png" height="100" />
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="src/fullfill.png" alt="Avatar" height="100">
-        </div>
-        <div class="flip-card-back">
-          <img src="src/fullfill.png" height="100" />
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="src/two_days.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back">
+            <img src="src/two_days.png" height="100" />
+          </div>
         </div>
       </div>
-    </div>
 
-  </div>
-
-  <div id="lucky_draw">
-    <div class="flip-card" onclick="flip_card(1)">
-      <div class="flip-card-inner" id="lucky-inner-1">
-        <div class="flip-card-front">
-          <img src="src/flip.png" alt="Avatar" height="100">
-        </div>
-        <div class="flip-card-back" id="lucky-back-1">
-          <img src="src/full_body.png" height="100" />
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="src/one_night.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back">
+            <img src="src/one_night.png" height="100" />
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="flip-card" onclick="flip_card(2)">
-      <div class="flip-card-inner" id="lucky-inner-2">
-        <div class="flip-card-front">
-          <img src="src/flip.png" alt="Avatar" height="100">
-        </div>
-        <div class="flip-card-back" id="lucky-back-2">
-          <img src="src/head_neck.png" height="100" />
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="src/lego_block.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back">
+            <img src="src/lego_block.png" height="100" />
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="flip-card" onclick="flip_card(3)">
-      <div class="flip-card-inner" id="lucky-inner-3">
-        <div class="flip-card-front">
-          <img src="src/flip.png" alt="Avatar" height="100">
-        </div>
-        <div class="flip-card-back" id="lucky-back-3">
-          <img src="src/two_days.png" height="100" />
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="src/airplane_ticket.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back">
+            <img src="src/airplane_ticket.png" height="100" />
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="flip-card" onclick="flip_card(4)">
-      <div class="flip-card-inner" id="lucky-inner-4">
-        <div class="flip-card-front">
-          <img src="src/flip.png" alt="Avatar" height="100">
-        </div>
-        <div class="flip-card-back" id="lucky-back-4">
-          <img src="src/one_night.png" height="100" />
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="src/fullfill.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back">
+            <img src="src/fullfill.png" height="100" />
+          </div>
         </div>
       </div>
+
     </div>
 
-    <div class="flip-card" onclick="flip_card(5)">
-      <div class="flip-card-inner" id="lucky-inner-5">
-        <div class="flip-card-front">
-          <img src="src/flip.png" alt="Avatar" height="100">
-        </div>
-        <div class="flip-card-back" id="lucky-back-5">
-          <img src="src/lego_block.png" height="100" />
+    <div id="lucky_draw">
+      <div class="flip-card" onclick="flip_card(1)">
+        <div class="flip-card-inner" id="lucky-inner-1">
+          <div class="flip-card-front">
+            <img src="src/flip.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back" id="lucky-back-1">
+            <img src="src/full_body.png" height="100" />
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="flip-card" onclick="flip_card(6)">
-      <div class="flip-card-inner" id="lucky-inner-6">
-        <div class="flip-card-front">
-          <img src="src/flip.png" alt="Avatar" height="100">
-        </div>
-        <div class="flip-card-back" id="lucky-back-6">
-          <img src="src/airplane_ticket.png" height="100" />
+      <div class="flip-card" onclick="flip_card(2)">
+        <div class="flip-card-inner" id="lucky-inner-2">
+          <div class="flip-card-front">
+            <img src="src/flip.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back" id="lucky-back-2">
+            <img src="src/head_neck.png" height="100" />
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="flip-card" onclick="flip_card(7)">
-      <div class="flip-card-inner" id="lucky-inner-7">
-        <div class="flip-card-front">
-          <img src="src/flip.png" alt="Avatar" height="100">
+      <div class="flip-card" onclick="flip_card(3)">
+        <div class="flip-card-inner" id="lucky-inner-3">
+          <div class="flip-card-front">
+            <img src="src/flip.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back" id="lucky-back-3">
+            <img src="src/two_days.png" height="100" />
+          </div>
         </div>
-        <div class="flip-card-back" id="lucky-back-7">
-          <img src="src/fullfill.png" height="100" />
+      </div>
+
+      <div class="flip-card" onclick="flip_card(4)">
+        <div class="flip-card-inner" id="lucky-inner-4">
+          <div class="flip-card-front">
+            <img src="src/flip.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back" id="lucky-back-4">
+            <img src="src/one_night.png" height="100" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" onclick="flip_card(5)">
+        <div class="flip-card-inner" id="lucky-inner-5">
+          <div class="flip-card-front">
+            <img src="src/flip.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back" id="lucky-back-5">
+            <img src="src/lego_block.png" height="100" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" onclick="flip_card(6)">
+        <div class="flip-card-inner" id="lucky-inner-6">
+          <div class="flip-card-front">
+            <img src="src/flip.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back" id="lucky-back-6">
+            <img src="src/airplane_ticket.png" height="100" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" onclick="flip_card(7)">
+        <div class="flip-card-inner" id="lucky-inner-7">
+          <div class="flip-card-front">
+            <img src="src/flip.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back" id="lucky-back-7">
+            <img src="src/fullfill.png" height="100" />
+          </div>
         </div>
       </div>
     </div>
@@ -191,6 +231,10 @@
 </html>
 
 <style>
+  #section-2 {
+    display: none;
+  }
+
   #choose,
   #lucky_draw {
     margin-top: 30px;
@@ -316,20 +360,53 @@
     margin-top: 40px;
     margin-bottom: 40px;
   }
+
+  #disclaimer {
+    display: none;
+  }
+
+  #running_hotdog {
+    display: none;
+  }
+
+  #back-btn {
+    display: none;
+    ;
+  }
 </style>
 
 <script>
   var unclickable = false;
 
   function chooseBlock() {
+    document.getElementById("disclaimer").style.display = "block";
     document.getElementById("choose").style.display = "block";
     document.getElementById("lucky-draw-btn").style.display = "none";
+    document.getElementById("running_hotdog").style.display = "block";
+    document.getElementById("waiting_hotdog").style.display = "none";
+    document.getElementById("back-btn").style.display = "inline-block";
 
   }
 
   function luckyDrawBlock() {
+    document.getElementById("disclaimer").style.display = "block";
     document.getElementById("lucky_draw").style.display = "block";
     document.getElementById("choose-btn").style.display = "none";
+    document.getElementById("running_hotdog").style.display = "block";
+    document.getElementById("waiting_hotdog").style.display = "none";
+    document.getElementById("back-btn").style.display = "inline-block";
+  }
+
+  function backBlock() {
+    document.getElementById("disclaimer").style.display = "none";
+    document.getElementById("choose").style.display = "none";
+    document.getElementById("lucky_draw").style.display = "none";
+    document.getElementById("choose-btn").style.display = "inline-block";
+    document.getElementById("lucky-draw-btn").style.display = "inline-block";
+    document.getElementById("running_hotdog").style.display = "none";
+    document.getElementById("waiting_hotdog").style.display = "block";
+    document.getElementById("back-btn").style.display = "none";
+    unclickable = false;
   }
 
   function flip_card(id) {
@@ -343,5 +420,9 @@
     unclickable = true;
   }
 
+  function sectionTwo() {
+    document.getElementById("section-1").style.display = "none";
+    document.getElementById("section-2").style.display = "block";
+  }
 
 </script>
